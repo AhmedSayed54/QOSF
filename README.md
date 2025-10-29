@@ -24,8 +24,6 @@ This project was created as part of the QC Mentorship Program screening tasks.
   Install via pip:
 pip install numpy
 
-text
-
 ### Usage
 
 1. Clone or download this repository.
@@ -40,8 +38,6 @@ ampls = [1, 1j, 0, 0.5]
 state = prepare_two_qubit_state(ampls)
 print("Prepared state:", state)
 
-text
-
 ## Unit Tests
 
 Simple tests are included. They verify that:
@@ -52,14 +48,11 @@ To run the tests, simply execute the script:
 
 python quantum_state.py
 
-text
-
 You should see output similar to:
 
 Prepared state: [0.89442719+0.j 0.+0.89442719j 0.+0.j 0.4472136+0.j]
 All tests passed.
 
-text
 
 ## Task Requirements
 
