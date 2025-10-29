@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: Q-core team
+@author: Ahmed Sayedahmed
 
 This script prepares a quantum state vector for a 2-qubit or 3-qubit system.
 You can enter amplitudes manually or use a test state.
@@ -79,3 +79,4 @@ if __name__ == "__main__":
     test_two_qubit_state()
     test_three_qubit_state()
     print("All unit tests passed!")
+
