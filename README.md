@@ -35,10 +35,14 @@ python prepare_state.py
 ### Example Interactive Usage
 
 How many qubits? Enter 2 or 3 only: 2
+
 Type 'manual' / 'm' to enter amplitudes or 'test' / 't' for test state:
 manual
+
 Enter 4 amplitudes (real or complex, e.g. 1 or 1j), separated by spaces:
+
 1 1j 0 0.5
+
 Normalized state: [0.66666667+0.j 0. +0.66666667j 0. +0.j
 0.33333333+0.j ]
 All unit tests passed!
