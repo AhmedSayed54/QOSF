@@ -1,19 +1,21 @@
-# Quantum State Preparation: Two-Qubit Amplitudes (QC Screening Task)
+# Quantum State Preparation: Two- and Three-Qubit Systems (QC Screening Task)
 
 ## Overview
 
-This repository contains a simple Python implementation for preparing a two-qubit quantum state from user-supplied complex amplitudes.  
-This project was created as part of the QC Mentorship Program screening tasks.
+This repository contains a Python script for preparing and normalizing quantum state vectors for 2-qubit and 3-qubit systems, using only NumPy.  
+It is designed specifically for the QC Mentorship Program screening tasks and rigorously follows the program’s requirements.
 
-- **No advanced quantum libraries required** (uses only NumPy)
-- **Perfect for beginners**: easy code, step-by-step explanations
+---
 
 ## Features
 
-- Accepts an array of **4 complex amplitudes** (for a two-qubit quantum state)
-- **Automatically normalizes** the state if needed
-- Returns the normalized state as a NumPy array
-- Includes basic **unit tests** for correctness
+- Supports **2-qubit (4 amplitudes)** and **3-qubit (8 amplitudes)** states.
+- Allows entry of amplitudes manually (real or complex) or selection of a default test state.
+- Normalizes any input state automatically.
+- Clear and simple code with plain-English comments.
+- **Includes unit tests** ensuring output is always normalized and correct in dimension.
+
+---
 
 ## Getting Started
 
@@ -21,54 +23,52 @@ This project was created as part of the QC Mentorship Program screening tasks.
 
 - Python 3.x
 - [NumPy](https://numpy.org/)  
-  Install via pip:
+  Install with:
 pip install numpy
 
-### Usage
 
-1. Clone or download this repository.
-2. Open the main Python file, for example `quantum_state.py`.
-3. Run with your amplitudes as follows:
+### Running the Script
 
-import numpy as np
-from quantum_state import prepare_two_qubit_state
-
-Example usage
-ampls = [1, 1j, 0, 0.5]
-state = prepare_two_qubit_state(ampls)
-print("Prepared state:", state)
-
-## Unit Tests
-
-Simple tests are included. They verify that:
-- The state is always normalized
-- The output vector has length 4
-
-To run the tests, simply execute the script:
-
-python quantum_state.py
-
-You should see output similar to:
-
-Prepared state: [0.89442719+0.j 0.+0.89442719j 0.+0.j 0.4472136+0.j]
-All tests passed.
+1. Save the script as `prepare_state.py`.
+2. Run in terminal or command prompt:
+python prepare_state.py
 
 
-## Task Requirements
+### Example Interactive Usage
 
-- Normalize input amplitudes so their squared magnitudes sum to 1
-- Output the normalized quantum state vector as a NumPy array of size 4
-- **No use of high-level quantum state preparation functions** (e.g., Qiskit)
-- Clear code, beginner-friendly, reliable
+How many qubits? Enter 2 or 3 only: 2
+Type 'manual' / 'm' to enter amplitudes or 'test' / 't' for test state:
+manual
+Enter 4 amplitudes (real or complex, e.g. 1 or 1j), separated by spaces:
+1 1j 0 0.5
+Normalized state: [0.66666667+0.j 0. +0.66666667j 0. +0.j
+0.33333333+0.j ]
+All unit tests passed!
 
-## Stretch Goal
 
-You can easily extend the code to prepare a three-qubit state (8 amplitudes).  
-Contributions and improvements are welcome!
+---
+
+## File Structure
+
+- `prepare_state.py` — Main script (copy from this repo!)
+
+---
+
+## Task Requirements (Checklist)
+
+- [x] Accept input as a list or array of amplitudes (4 or 8, as required).
+- [x] Ensure the state is normalized (\(|a_0|^2 + ... = 1\)).
+- [x] Output as a NumPy array, shape (4,) for 2 qubits, (8,) for 3 qubits.
+- [x] No quantum-specific state preparation functions, only NumPy.
+- [x] Contains unit tests for normalization and vector size.
+
+---
 
 ## License
 
 MIT License
+
+---
 
 ## Contact
 
