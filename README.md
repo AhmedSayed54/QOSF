@@ -45,6 +45,7 @@ Enter 4 amplitudes (real or complex, e.g. 1 or 1j), separated by spaces:
 
 Normalized state: [0.66666667+0.j 0. +0.66666667j 0. +0.j
 0.33333333+0.j ]
+
 All unit tests passed!
 
 
