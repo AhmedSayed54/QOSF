@@ -5,7 +5,6 @@
 This repository contains a Python script for preparing and normalizing quantum state vectors for 2-qubit and 3-qubit systems, using only NumPy.  
 It is designed specifically for the QC Mentorship Program screening tasks and rigorously follows the program’s requirements.
 
----
 
 ## Features
 
@@ -15,7 +14,6 @@ It is designed specifically for the QC Mentorship Program screening tasks and ri
 - Clear and simple code with plain-English comments.
 - **Includes unit tests** ensuring output is always normalized and correct in dimension.
 
----
 
 ## Getting Started
 
@@ -46,13 +44,11 @@ Normalized state: [0.66666667+0.j 0. +0.66666667j 0. +0.j
 All unit tests passed!
 
 
----
 
 ## File Structure
 
 - `prepare_state.py` — Main script (copy from this repo!)
 
----
 
 ## Task Requirements (Checklist)
 
@@ -62,13 +58,11 @@ All unit tests passed!
 - [x] No quantum-specific state preparation functions, only NumPy.
 - [x] Contains unit tests for normalization and vector size.
 
----
 
 ## License
 
 MIT License
 
----
 
 ## Contact
 
